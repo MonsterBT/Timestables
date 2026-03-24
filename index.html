@@ -551,7 +551,7 @@ function timeOut(q){
   streak=0; wrongCount++;
   showFeedback('⏰ Answer: '+q.ans,'wrong');
   history.push({a:q.a,b:q.b,ans:q.ans,given:null,ok:false});
-  setTimeout(()=>{qIdx++;nextQuestion();},2500);
+  setTimeout(()=>{qIdx++;nextQuestion();},2000);
 }
 
 function showFeedback(msg,cls){
